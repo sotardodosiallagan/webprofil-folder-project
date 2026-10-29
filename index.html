@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anugrah | Portofolio Mahasiswa Teknik Informatika UNESA</title>
+<meta name="description" content="Portofolio Sotardodo Anugrah Siallagan, mahasiswa Teknik Informatika UNESA dan penerima Beasiswa AMN Surabaya. Lihat profil, kemampuan, dan pencapaian.">
+<meta name="author" content="Sotardodo Anugrah Siallagan">
+<meta name="theme-color" content="#5bb8ff">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<meta property="og:title" content="Anugrah | Portofolio">
+<meta property="og:description" content="Mahasiswa Teknik Informatika UNESA dan penerima Beasiswa AMN Surabaya.">
+
+<!-- Tandai JS aktif sedini mungkin agar animasi scroll reveal tidak berkedip -->
+<script>document.documentElement.classList.add('js')</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Silkscreen:wght@700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
+<link rel="stylesheet" href="style.css">
+
+<!-- Urutan eksekusi = urutan tulis. Swiper paling akhir supaya skrip lokal tidak menunggu CDN. -->
+<script src="common.js" defer></script>
+<script src="sertifikat-data.js" defer></script>
+<script src="script.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js" defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sotardodo Anugrah Siallagan",
+  "alternateName": "Anugrah",
+  "jobTitle": "Mahasiswa Teknik Informatika",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "Universitas Negeri Surabaya" },
+  "email": "mailto:siallagansotardodo@gmail.com",
+  "sameAs": ["https://www.linkedin.com/in/sotardodo-anugrah-siallagan-283ba0431/"]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+<!-- Animasi pembuka: awan membesar, lalu web muncul (klik untuk melewati). Dekoratif, jadi disembunyikan dari pembaca layar -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro-bg"></div>
+  <img class="ic" style="--w:70vw;--l:-18vw;--t:-12vh;--tx:-55vw;--ty:-30vh" src="awan.png" alt="" width="1100" height="404" decoding="async">
+  <img class="ic" style="--w:66vw;--l:48vw;--t:-14vh;--tx:55vw;--ty:-32vh" src="awan.png" alt="" width="1100" height="404" decoding="async">
+  <img class="ic" style="--w:72vw;--l:-20vw;--t:58vh;--tx:-55vw;--ty:32vh" src="awan.png" alt="" width="1100" height="404" decoding="async">
+  <img class="ic" style="--w:68vw;--l:52vw;--t:60vh;--tx:55vw;--ty:30vh" src="awan.png" alt="" width="1100" height="404" decoding="async">
+  <img class="ic" style="--w:52vw;--l:-8vw;--t:28vh;--tx:-60vw;--ty:-6vh" src="awan.png" alt="" width="1100" height="404" decoding="async">
+  <img class="ic" style="--w:54vw;--l:56vw;--t:30vh;--tx:60vw;--ty:6vh" src="awan.png" alt="" width="1100" height="404" decoding="async">
+  <img class="ic" style="--w:48vw;--l:26vw;--t:-6vh;--tx:0vw;--ty:-45vh" src="awan.png" alt="" width="1100" height="404" decoding="async">
+  <img class="ic" style="--w:50vw;--l:25vw;--t:62vh;--tx:0vw;--ty:45vh" src="awan.png" alt="" width="1100" height="404" decoding="async">
+  <div class="intro-logo">Anugrah</div>
+</div>
+
+<header class="navbar">
+  <nav class="nav-inner" aria-label="Menu utama">
+    <a href="#home" class="logo">Anugrah</a>
+    <button class="burger" id="burger" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">What I Can Do</a></li>
+      <li><a href="#achievement">Achievement</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section id="home" class="hero" aria-labelledby="hero-title">
+    <div class="hero-top">
+      <img class="cloud cloud-1" src="awan.png" alt="" width="1100" height="404" decoding="async">
+      <img class="cloud cloud-2" src="awan.png" alt="" width="1100" height="404" decoding="async">
+      <h1 class="hero-title" id="hero-title" lang="en" aria-label="Welcome, Everyone!">Welcome, <span class="typed" id="typed" aria-hidden="true">Everyone!</span></h1>
+      <img class="cloud cloud-3" src="awan.png" alt="" width="1100" height="404" decoding="async">
+      <img class="cloud cloud-4" src="awan.png" alt="" width="1100" height="404" decoding="async">
+    </div>
+
+    <div class="photo">
+      <!-- Ganti dengan foto PNG tanpa background jika ingin foto lain -->
+      <img class="photo-img" src="IconUnesa.png" alt="Foto Sotardodo Anugrah Siallagan" width="818" height="1800" fetchpriority="high">
+
+      <!-- Animasi angin di belakang foto: ikon beterbangan, tersedot ke nama, lalu ditiup keluar. Diatur di script.js -->
+      <div class="wind" id="wind" aria-hidden="true">
+        <svg class="wind-streaks" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <g class="g-out">
+            <path class="streak" style="--sd:0s" pathLength="100" d="M47 30 C 36 24, 26 36, 8 28"/>
+            <path class="streak" style="--sd:.1s" pathLength="100" d="M46 46 C 34 50, 22 40, 4 46"/>
+            <path class="streak" style="--sd:.2s" pathLength="100" d="M47 62 C 36 68, 24 58, 8 66"/>
+            <path class="streak" style="--sd:.05s" pathLength="100" d="M53 30 C 64 24, 74 36, 92 28"/>
+            <path class="streak" style="--sd:.15s" pathLength="100" d="M54 46 C 66 50, 78 40, 96 46"/>
+            <path class="streak" style="--sd:.25s" pathLength="100" d="M53 62 C 64 68, 76 58, 92 66"/>
+          </g>
+          <g class="g-in">
+            <path class="streak" style="--sd:0s" pathLength="100" d="M8 34 C 24 30, 30 80, 50 106"/>
+            <path class="streak" style="--sd:.1s" pathLength="100" d="M4 56 C 22 54, 34 92, 50 106"/>
+            <path class="streak" style="--sd:.2s" pathLength="100" d="M10 78 C 24 80, 38 100, 50 106"/>
+            <path class="streak" style="--sd:.05s" pathLength="100" d="M92 34 C 76 30, 70 80, 50 106"/>
+            <path class="streak" style="--sd:.15s" pathLength="100" d="M96 56 C 78 54, 66 92, 50 106"/>
+            <path class="streak" style="--sd:.25s" pathLength="100" d="M90 78 C 76 80, 62 100, 50 106"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <p class="hero-name">Sotardodo Anugrah Siallagan</p>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="block" aria-labelledby="about-title">
+    <div class="container">
+      <h2 class="section-title" id="about-title" data-reveal>About Me</h2>
+
+      <div class="about-card" data-reveal>
+        <div class="about-col">
+          <article class="sheet">
+            <h3 class="about-h">Profil</h3>
+            <div class="profile">
+              <!-- Foto avatar sudah dikecilkan (240px). Ganti file ini jika ingin foto lain -->
+              <div class="avatar" data-img>
+                <span aria-hidden="true">SA</span>
+                <img src="ProfileAbout-240.webp" alt="Foto profil Anugrah" width="240" height="240" decoding="async">
+              </div>
+              <div>
+                <h4>Sotardodo Anugrah Siallagan</h4>
+                <p>Mahasiswa Teknik Informatika, UNESA</p>
+                <ul class="chips">
+                  <li>Coding</li><li>Design</li><li>Teamwork</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="sheet">
+            <h3 class="about-h">Deskripsi Diri</h3>
+            <p lang="en">I'm an Informatics Engineering student at Universitas Negeri Surabaya (UNESA) and a recipient of the AMN Surabaya Scholarship. I'm currently building my foundation in programming and computer systems, and I enjoy design because it helps me think about how people actually use technology.</p>
+            <p lang="en">Before university, I competed in choir at the provincial through international level, including a Silver A Award at the Malaysia Choral Eisteddfod, and served as a church organist. Those years taught me discipline, teamwork, and how to perform under pressure, and I bring the same habits to my studies.</p>
+            <p lang="en">I'm looking to learn, collaborate on projects, and connect with people in software and tech.</p>
+          </article>
+        </div>
+
+        <div class="about-col">
+          <article class="sheet">
+            <h3 class="about-h">Pengalaman</h3>
+            <ul class="exp">
+              <li>
+                <span class="when">2026 - sekarang</span>
+                <h4>Mahasiswa Teknik Informatika</h4>
+                <p>UNESA. Tulis mata kuliah atau proyek yang menonjol.</p>
+              </li>
+              <li>
+                <span class="when">Tahun</span>
+                <h4>Nama pengalaman / organisasi</h4>
+                <p>Peran dan hal yang kamu kerjakan di sana.</p>
+              </li>
+              <li>
+                <span class="when">Tahun</span>
+                <h4>Nama pengalaman / organisasi</h4>
+                <p>Peran dan hal yang kamu kerjakan di sana.</p>
+              </li>
+            </ul>
+          </article>
+
+          <article class="sheet">
+            <h3 class="about-h">Aktivitas</h3>
+            <ul class="acts">
+              <li class="act"><span class="act-icon" aria-hidden="true">💻</span><h4 class="act-title">Latihan Coding</h4><p>Belajar dan mengerjakan soal logika.</p></li>
+              <li class="act"><span class="act-icon" aria-hidden="true">🎨</span><h4 class="act-title">Desain</h4><p>Membuat karya visual di waktu luang.</p></li>
+              <li class="act"><span class="act-icon" aria-hidden="true">👥</span><h4 class="act-title">Kerja Kelompok</h4><p>Tugas dan presentasi bersama tim.</p></li>
+              <li class="act"><span class="act-icon" aria-hidden="true">📚</span><h4 class="act-title">Belajar Hal Baru</h4><p>Ganti dengan aktivitas kamu.</p></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I Can Do -->
+  <section id="skills" class="block" aria-labelledby="skills-title">
+    <div class="wicd">
+      <div class="wicd-intro" data-reveal>
+        <h2 id="skills-title">What I Can Do</h2>
+        <p>Saya menggabungkan kemampuan teknis, pemecahan masalah, dan desain untuk membangun hal yang berguna dan enak dipakai. Ganti teks ini dengan deskripsimu sendiri.</p>
+        <ul class="tools" aria-label="Tools dan teknologi">
+          <li class="tool" title="HTML5"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="38" height="38" loading="lazy"></li>
+          <li class="tool" title="CSS3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="38" height="38" loading="lazy"></li>
+          <li class="tool" title="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="38" height="38" loading="lazy"></li>
+          <li class="tool" title="C++"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width="38" height="38" loading="lazy"></li>
+          <li class="tool" title="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="38" height="38" loading="lazy"></li>
+          <li class="tool" title="Git"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="38" height="38" loading="lazy"></li>
+          <li class="tool" title="GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="38" height="38" loading="lazy"></li>
+          <li class="tool" title="Figma"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" width="38" height="38" loading="lazy"></li>
+          <li class="tool" title="MySQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="38" height="38" loading="lazy"></li>
+          <li class="tool" title="VS Code"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" width="38" height="38" loading="lazy"></li>
+          <li class="tool" title="Node.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="38" height="38" loading="lazy"></li>
+          <li class="tool" title="React"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="38" height="38" loading="lazy"></li>
+        </ul>
+      </div>
+
+      <div class="cap-cards">
+        <article class="cap" data-reveal style="--d:.1s">
+          <div class="cap-top">
+            <span class="cap-no" aria-hidden="true">01</span>
+            <h3 class="cap-cat">IT &amp; Web Development</h3>
+          </div>
+          <div class="cap-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          </div>
+          <p>Membangun dan menguji program serta halaman web, dengan fokus pada logika yang rapi dan tampilan yang mudah dipakai.</p>
+          <ul class="tags">
+            <li>Web Development</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>C++</li><li>Problem Solving</li>
+          </ul>
+        </article>
+
+        <article class="cap" data-reveal style="--d:.25s">
+          <div class="cap-top">
+            <span class="cap-no" aria-hidden="true">02</span>
+            <h3 class="cap-cat">Design &amp; Creative</h3>
+          </div>
+          <div class="cap-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 100 18c1.5 0 2-1 1.5-2-.6-1.2 0-2.5 1.5-2.5H17a4 4 0 004-4c0-5-4-9.5-9-9.5z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7.5" r="1"/></svg>
+          </div>
+          <p>Mengubah ide menjadi karya visual: dari desain tampilan sampai materi presentasi yang jelas dan menarik.</p>
+          <ul class="tags">
+            <li>UI Layout</li><li>Desain Grafis</li><li>Presentasi</li><li>Kerja Tim</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievement -->
+  <section id="achievement" class="block" aria-labelledby="achievement-title">
+    <div class="container">
+      <h2 class="section-title" id="achievement-title" data-reveal>Achievement</h2>
+
+      <div class="achv-wrap" data-reveal>
+        <ol class="timeline">
+          <li>
+            <time class="year" datetime="2026">2026</time>
+            <h3>Lolos Jalur SNBP Teknik Informatika UNESA &amp; Scholarship Awardee AMN Surabaya 2026</h3>
+            <p>Lolos di Prodi favorit saya &amp; Beasiswa AMN Surabaya yang diberikan oleh BPI di 4 PTN yang berada di Surabaya</p>
+          </li>
+          <li>
+            <time class="year" datetime="2025">2025</time>
+            <h3>Memenangkan banyak kejuaraan di Paduan Suara</h3>
+            <p>Memenangkan di tingkat Nasional maupun Provinsi</p>
+          </li>
+          <li>
+            <time class="year" datetime="2024">2024</time>
+            <h3>Ikut Kompetisi Paduan Suara Internasional</h3>
+            <p>Pengalaman pertama &amp; terbaik ketika bisa bersaing dengan Paduan Suara dari berbagai negara lainnya</p>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Galeri sertifikat: kartu dibuat otomatis dari sertifikat-data.js -->
+      <div class="gallery" data-reveal>
+        <h3 class="gallery-title">Galeri Sertifikat</h3>
+        <p class="gallery-hint">Klik sertifikat untuk melihat ceritanya</p>
+        <div class="swiper cert-swiper">
+          <div class="swiper-wrapper" id="certWrapper"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev" aria-label="Sebelumnya"></div>
+          <div class="swiper-button-next" aria-label="Berikutnya"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="block" aria-labelledby="contact-title">
+    <div class="container">
+      <h2 class="section-title" id="contact-title" data-reveal>Contact</h2>
+
+      <address class="contact-grid" data-reveal>
+        <a class="contact-item" href="mailto:siallagansotardodo@gmail.com"><span class="contact-label">Email</span>siallagansotardodo@gmail.com</a>
+        <a class="contact-item" href="https://www.linkedin.com/in/sotardodo-anugrah-siallagan-283ba0431/" target="_blank" rel="noopener"><span class="contact-label">LinkedIn</span>Sotardodo Anugrah Siallagan</a>
+        <a class="contact-item" href="https://www.instagram.com/doo.4s/" target="_blank" rel="noopener"><span class="contact-label">Instagram</span>@doo.4s</a>
+      </address>
+
+      <form class="form" id="contactForm" data-reveal>
+        <label class="sr-only" for="name">Nama kamu</label>
+        <input type="text" id="name" name="name" placeholder="Nama kamu" autocomplete="name" required>
+        <label class="sr-only" for="email">Email kamu</label>
+        <input type="email" id="email" name="email" placeholder="Email kamu" autocomplete="email" required>
+        <label class="sr-only" for="message">Pesan</label>
+        <textarea id="message" name="message" placeholder="Tulis pesan" required></textarea>
+        <button type="submit" class="btn">KIRIM PESAN</button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>© <span id="year"></span> Sotardodo Anugrah Siallagan</footer>
+</body>
+</html>
